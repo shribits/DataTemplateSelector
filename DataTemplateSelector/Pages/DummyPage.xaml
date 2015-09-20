@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+xmlns:local="clr-namespace:DataTemplateSelector;assembly=DataTemplateSelector"
+x:Class="DataTemplateSelector.DummyPage">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+         <DataTemplate x:Key="RightImageTemplate">
+            <local:RightImageCell/>
+         </DataTemplate>
+         <DataTemplate x:Key="LeftImageTemplate">
+            <local:LeftImageCell />
+         </DataTemplate>
+         <DataTemplate x:Key="CenterImageTemplate">
+            <local:CenterImageCell />
+         </DataTemplate>
+         <local:DataTemplateSelector x:Key="TableTemplateSelector" RightImageTemplate="{StaticResource RightImageTemplate}" LeftImageTemplate="{StaticResource LeftImageTemplate}" CenterImageTemplate="{StaticResource CenterImageTemplate}"/>
+      </ResourceDictionary>
+   	</ContentPage.Resources>
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" x:Name="MainLayout" BackgroundColor="#FFD700">
+    	<StackLayout>
+    		<BoxView HeightRequest="20" BackgroundColor="Transparent"/>
+    		<Label Text="Contact List" XAlign="Center" VerticalOptions="Center" FontAttributes="Bold" BackgroundColor="White"/>
+    		<BoxView HeightRequest="10" BackgroundColor="Transparent"/>
+    	</StackLayout>
+   		<local:CustomListView ItemsSource="{Binding DummyCellSet}" TemplateSelector="{StaticResource TableTemplateSelector}" SeparatorVisibility="None" VerticalOptions="FillAndExpand" BackgroundColor="Transparent" HasUnevenRows="true"/>
+    </StackLayout>
+</ContentPage>

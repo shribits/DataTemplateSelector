@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell 
+xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+x:Class="DataTemplateSelector.CenterImageCell">
+	<ViewCell.View>
+		<StackLayout Padding="5">
+		<Grid BackgroundColor="White" Padding="10" >
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="80" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+			   <RowDefinition Height="80" />
+			</Grid.RowDefinitions>
+			<Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontAttributes="Bold"/>
+			<Image Grid.Row="0" Grid.Column="1" Source="{Binding ProfileImage}"/>
+			<Label Grid.Row="0" Grid.Column="2" Text="{Binding ContactNo}"/>
+		</Grid>
+		</StackLayout>
+	</ViewCell.View>
+</ViewCell>

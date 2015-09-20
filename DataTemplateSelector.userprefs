@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="iOS/DataTemplateSelector.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.8.4" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataTemplateSelector/Pages/TemplateHelper/CustomListView.cs">
+    <Files>
+      <File FileName="DataTemplateSelector/Views/CenterImageCell.xaml" Line="1" Column="1" />
+      <File FileName="DataTemplateSelector/Views/LeftImageCell.xaml" Line="1" Column="1" />
+      <File FileName="DataTemplateSelector/Views/RightImageCell.xaml" Line="1" Column="1" />
+      <File FileName="DataTemplateSelector/Pages/DummyPage.xaml" Line="1" Column="1" />
+      <File FileName="DataTemplateSelector/ViewModel/DummyViewModel.cs" Line="1" Column="1" />
+      <File FileName="DataTemplateSelector/Pages/TemplateHelper/ListDataTemplateSelector.cs" Line="1" Column="1" />
+      <File FileName="iOS/Main.cs" Line="1" Column="1" />
+      <File FileName="DataTemplateSelector/Pages/TemplateHelper/CustomListView.cs" Line="9" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
